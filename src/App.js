@@ -4,6 +4,9 @@ import Home from './component/Home' ;
 import About from './component/About' ;
 import Projects from './component/Projects' ;
 import Skills from './component/Skills' ;
+import Experience from './component/Experience' ;
+import Try from './component/Try' ;
+
 import './App.css';
 
 function App() {
@@ -14,6 +17,9 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        
+        
+
     </div>
     
   )

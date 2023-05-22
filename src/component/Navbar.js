@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+
 import { House } from "phosphor-react";
 import { User } from "phosphor-react";
 import { ListChecks } from "phosphor-react";
 import { Envelope } from "phosphor-react";
+import { Link  } from "react-scroll";
 
 
 
@@ -14,26 +15,39 @@ function Navbar(){
         
         <li>
             <div >
-                <div className="space"></div>
-                <House size={28} />
+                <Link  to="home" spy={true} smooth={true} offset={50} duration={500} > 
+                    <div className="space"></div>
+                    <House size={28} /><a href="#skills"></a>
+                </Link>
+                
             </div>
         </li>
         <li>
             <div >
-                <div className="space"></div>
-                <User size={28} />
+                <Link  to="about" spy={true} smooth={true} offset={50} duration={500} >
+                    <div className="space"></div>
+                    <User size={28} />
+                </Link>
+                
             </div>
         </li>
         <li>
             <div >
-                <div className="space"></div>
-                <ListChecks size={28} />
+                <Link to="skills" spy={true} smooth={true} offset={50} duration={500}>
+                    <div className="space"></div>
+                    <ListChecks size={28} />
+                </Link>
+                
             </div>
         </li>
         <li>
             <div >
-                <div className="space"></div>
-                <Envelope size={28} />
+                <Link to="experience" spy={true} smooth={true} offset={50} duration={500}>
+                    <div className="space"></div>
+                    <Envelope size={28} />
+                </Link>
+                
+                
             </div>
         </li>
         

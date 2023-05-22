@@ -2,6 +2,9 @@
   padding: 0px;
   margin: 0px;
 }
+body{
+  scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
   display: none;
 }
@@ -31,7 +34,7 @@ nav ul {
 }
 nav ul li {
   border-radius:50%;
-  background-color: rgb(114, 18, 232,.5);
+  background-color: rgba(227, 77, 184, 0.5) ;
   margin-top:20%;
   
   position: relative;
@@ -48,7 +51,7 @@ nav ul li {
 
 
 .container{
-  /*background-image: linear-gradient(330deg,rgb(48, 1, 106),rgb(114, 22, 189),rgb(186, 33, 209));
+ /* background-image: linear-gradient(330deg,rgb(48, 1, 106),rgb(114, 22, 189),rgb(186, 33, 209));
   */height:100vh;
   display: flex;
   align-items: center;
@@ -83,6 +86,7 @@ nav ul li {
   font-family: var(--font-text);
   font-size: 20px;
   width:45%;
+  
 }
 
 /* backgroung */
@@ -292,10 +296,14 @@ nav ul li {
   align-items: center;
 }
 
-.logos{
+.logos {
   display: flex;
   flex-direction: row;
   gap:10px;
+  color:white;
+}
+.logos a {
+  color:white;
 }
 
 
@@ -306,14 +314,20 @@ nav ul li {
 }
 h1 {
   display: flex;
+  align-items: center;
   justify-content: center;
   font-family: var(--font-big);
   color: var(--color-first);
+  height: 180px;
 }
 .abouttext {
-  font-family: var(--font-text);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  word-spacing:8px;
+  text-indent:40px;
   font-size: 17px;
   width:35%;
+  line-height: 1.8;
+  color:black;
 }
 .aboutlottie {
   width:40%;
@@ -437,8 +451,7 @@ div .dot {
 /* ////////////////////////// Projects ///////////*/
 @media screen and (max-width: 991px){
   .skill {
-      display: flex;
-      flex-direction: column;
+      
       height: 500em;
       margin-top: 0em;
   }
@@ -479,7 +492,7 @@ img {
 }
 .skillbox{
   height:6em;
-  border: 3px solid rgb(114, 18, 232,.5);
+  border: 3px solid rgba(222, 77, 227, 0.5);
   border-radius: 1rem;
   margin-top: 0%;
   border-radius: 20px;
@@ -494,21 +507,13 @@ img {
 .skillset {
   display: flex;
 }
-.skill{
-  margin-top: 0em;
-  height: 50em;
-  color: var(--color-first);
-  display: flex;
-  justify-content: center;
-  /*flex-direction: row;
-  align-items: center;
-  
-  */
-}
+
+
+
 .skillcont{
-  /*display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: space-evenly;*/
+  justify-content:center;
   margin-left: 3em;
   gap:3em;
   
@@ -518,6 +523,8 @@ h2 {
   margin-left:15%;
   margin-top: 5%;
   margin-bottom: 2%;
+  font-family:'Courier New', Courier, monospace;
+  color: rgb(59, 5, 88);
 }
 .skillgrid{
   display: flex;
@@ -536,4 +543,60 @@ h2 {
 .data {
   width: 4em;
   height: 3em;
+}
+/* ///////////////////////////////////// */
+.skillList {
+  width:80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+.skills {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (max-width: 1300px) {
+  .skillList {
+    grid-template-columns: 1fr 1fr;
+  }
+  .skillbox{
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .skillList {
+    grid-template-columns: 1fr;
+  }
+  .skillbox{
+    width:450px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .skillList {
+    width: 100%;
+  }
+}
+
+/*//////////////////////////////////////////// */
+/*
+body {
+  background-image: linear-gradient(-0deg, rgb(117, 73, 170)  0%,rgb(171, 99, 207) 25%,  rgb(252, 252, 252) 51%, rgb(255, 255, 255) 100%);
+
+}*/
+/*//////////////////////////////////////////////  exp  /////////////////////////////////////////////////*/
+.experience {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.experience h3 {
+  font-size: 18px;
+}
+.experience h4 {
+  font-size: 13px;
 }

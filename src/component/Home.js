@@ -6,7 +6,7 @@ import { InstagramLogo } from "phosphor-react";
 
 function Home(){
     return (
-        <div class="bg">
+        <div class="bg" id="home">
             <div class="intro">
             <div class="container">
                 
@@ -28,7 +28,9 @@ function Home(){
                                          <LinkedinLogo size={28} />
                                         </div>
                                         <div>
-                                         <GithubLogo size={28} />
+                                            <a href="https://github.com/rihabab">
+                                                <GithubLogo size={28} />
+                                            </a>
                                         </div>
                                         <div>
                                          <InstagramLogo size={28} />

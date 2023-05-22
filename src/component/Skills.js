@@ -11,19 +11,19 @@ import junit from '../assets/images/junit.png';
 import oracle from '../assets/images/oracle.png';
 import mysql from '../assets/images/mysql.webp';
 import postgresql from '../assets/images/postgresql.png';
-
+import git from '../assets/images/git.png';
+import figma from '../assets/images/figma.png';
 
 
 function Skills() {
     return (
-        <div>
-            <h1>SKILLS</h1>
-            
         
-            <h2>Technical Skills</h2>
-            <div className='skill'>
-                <div className='skillcont'>
-                    <div className='skillbox'>
+       <div id="skills">
+            <h1> mySkills</h1>
+            <h2>Technical skills</h2>
+        <div className="skills" >
+            <div className="skillList">
+            <div className='skillbox'>
                         <div>Front End</div>
                         <div className="skillset">
                             <div className='skillimg'><img src={Html} alt="html icon" /><div>HTML</div></div>
@@ -32,16 +32,6 @@ function Skills() {
                             <div className='skillimg'><img src={reactjs} alt="reactjs icon" /><div>React js</div></div>
                         </div>
                     </div>
-                    <div className='skillbox'>
-                        <div>Databases</div>
-                        <div className="skillset">
-                            <div className='skillimg'><img src={oracle} alt="selenium icon" className='data'/></div>
-                            <div className='skillimg'><img src={mysql} alt="junit icon" className='data'/></div>
-                            <div className='skillimg'><img src={postgresql} alt="junit icon" className='data'/></div>
-                        </div>
-                    </div>
-                </div>
-                <div className='skillcont'> 
                     <div className='skillbox'>
                         <div>Back End</div>
                         <div className="skillset">
@@ -53,21 +43,32 @@ function Skills() {
                         </div>
                     </div>
                     <div className='skillbox'>
-                        <div>Software Tools</div>
+                        <div>Databases</div>
                         <div className="skillset">
-                            <div className='skillimg'><img src={selenium} alt="selenium icon" /><div>Html</div></div>
-                            <div className='skillimg'><img src={junit} alt="junit icon" className='junit'/><div>Html</div></div>
+                            <div className='skillimg'><img src={oracle} alt="selenium icon" className='data'/></div>
+                            <div className='skillimg'><img src={mysql} alt="junit icon" className='data'/></div>
+                            <div className='skillimg'><img src={postgresql} alt="junit icon" className='data'/></div>
+                        </div>
+                    </div>
+                    <div className='skillbox'>
+                        <div>Test Driven Development </div>
+                        <div className="skillset">
+                            <div className='skillimg'><img src={selenium} alt="selenium icon" /><div>selenium</div></div>
+                            <div className='skillimg'><img src={junit} alt="junit icon" className='junit'/><div>JUnit</div></div>
                             
                         </div>
                     </div>
-                </div>
-                
+                    <div className='skillbox' >
+                        <div>Software Tools</div>
+                        <div className="skillset">
+                            <div className='skillimg'><img src={git} alt="git icon" /><div>git</div></div>
+                            <div className='skillimg'><img src={figma} alt="figma icon" /><div>Figma</div></div>
+                        </div>
+                    </div>
                 
             </div>
-       
-        
-
         </div>
+       </div>
         
     )
 }
