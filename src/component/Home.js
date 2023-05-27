@@ -8,7 +8,7 @@ function Home(){
     return (
         <div class="bg" id="home">
             <div class="intro">
-            <div class="container">
+            <div class="containerhome">
                 
                 <div class="home" id="HOME">
                     <div class="introtext">
@@ -25,7 +25,9 @@ function Home(){
                                     </a>
                                     <div className="logos">
                                         <div>
-                                         <LinkedinLogo size={28} />
+                                            <a href="https://www.linkedin.com/in/rihab-ait-bahessou-315070259/">
+                                                <LinkedinLogo size={28} />
+                                            </a>
                                         </div>
                                         <div>
                                             <a href="https://github.com/rihabab">
@@ -33,7 +35,9 @@ function Home(){
                                             </a>
                                         </div>
                                         <div>
-                                         <InstagramLogo size={28} />
+                                            <a href="https://github.com/rihabab">
+                                                <InstagramLogo size={28} />
+                                            </a>
                                         </div>
                                         <div>____</div>
                                     </div>

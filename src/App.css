@@ -36,7 +36,7 @@ nav ul li {
   border-radius:50%;
   background-color: rgba(227, 77, 184, 0.5) ;
   margin-top:20%;
-  
+  list-style-type: none ;
   position: relative;
   width: 2.4em;
   height: 2.4em;
@@ -50,7 +50,7 @@ nav ul li {
 /* ///////////////////////////////// Home ///////////////////////////////*/
 
 
-.container{
+.containerhome{
  /* background-image: linear-gradient(330deg,rgb(48, 1, 106),rgb(114, 22, 189),rgb(186, 33, 209));
   */height:100vh;
   display: flex;
@@ -199,7 +199,9 @@ nav ul li {
   /* --line_color : #00135C ;
   --back_color : #DEFFFA  ; */
 }
-
+.button:hover{
+  color:rgb(245, 240, 240);
+}
 .button{
   position : relative ;
   z-index : 0 ;
@@ -311,6 +313,14 @@ nav ul li {
 
 .about{
   height: 80vh;
+}
+@media screen and (max-width: 991px){
+  .about{
+    height: auto;
+  }
+  .abouttext{
+    width: 80%;
+  }
 }
 h1 {
   display: flex;
@@ -448,7 +458,10 @@ div .dot {
   }
 }
 
-/* ////////////////////////// Projects ///////////*/
+
+
+
+/* ////////////////////////// skills ///////////*/
 @media screen and (max-width: 991px){
   .skill {
       
@@ -475,23 +488,24 @@ div .dot {
   
   }
 
-img {
-  height: 2.6em;
-  width: 2.6em;
-  padding-top: 1em;
-  padding-right: 1.4em;
-  padding-left: 1.4em;
-  padding-bottom: .4em;
-}
+  img {
+    height: 4em;
+    width: 5.5em;
+    padding-top: 1em;
+    padding-right: 1.4em;
+    padding-left: 1.4em;
+    padding-bottom: .4em;
+  }
 .node{
-  width:4.4em;
+  width:6em;
 }
 .junit{
-  width:5.8em;
-  height: 2.2em;
+  width:8em;
+  height: 4em;
 }
+/*
 .skillbox{
-  height:6em;
+  height:9em;
   border: 3px solid rgba(222, 77, 227, 0.5);
   border-radius: 1rem;
   margin-top: 0%;
@@ -499,25 +513,31 @@ img {
   /*display: flex;
   flex-direction: column;
   align-items: center;*/
-  padding: 1.5em;
-  font-family: var(--font-big);
+  /*
+  padding: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 30em;
   margin-bottom: 3em;
+}*/
+@media screen and (max-width: 800px){
+  #skillbox{
+    width: 95%;
+  }
 }
+#skillbox{
+  border: 3px solid rgba(222, 77, 227, 0.5);
+  border-radius: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 9em;
+  padding: 1.1em;
+}
+
 .skillset {
   display: flex;
 }
 
 
 
-.skillcont{
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  margin-left: 3em;
-  gap:3em;
-  
-}
 h2 {
   color:black;
   margin-left:15%;
@@ -526,12 +546,7 @@ h2 {
   font-family:'Courier New', Courier, monospace;
   color: rgb(59, 5, 88);
 }
-.skillgrid{
-  display: flex;
-  width:100%;
-  justify-content: center;
- 
-}
+
 .skillimg {
   font-family: "Poppins",sans-serif;
   display: flex;
@@ -541,9 +556,10 @@ h2 {
   color: black;
 }
 .data {
-  width: 4em;
-  height: 3em;
+  width: 7em;
+  height: 5em;
 }
+
 /* ///////////////////////////////////// */
 .skillList {
   width:80%;
@@ -551,6 +567,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  gap:2em;
 }
 .skills {
   width: 100%;
@@ -599,4 +616,42 @@ body {
 }
 .experience h4 {
   font-size: 13px;
+}
+
+ 
+  
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.contact{
+  height: 75vh;
+}
+#contactform {
+	width:40%;
+  float:right; 
+  display:flex; 
+  padding:5em;
+  border-width: 1em;
+  border-radius:2em;
+	color: #fcf5f5;
+
+  /*
+	background-image: linear-gradient(-45deg, rgb(239, 13, 220) 0%, rgb(109, 17, 156) 25%, rgb(114, 18, 232) 51%, #e6b903 100%);
+	-webkit-animation: AnimateBG 20s ease infinite;
+			animation: AnimateBG 20s ease infinite;*/
+  }
+input{
+  border-radius: 0.5em;
+  height: 3em;
+  background-color: transparent;
+  border: 3px solid rgba(222, 77, 227, 0.5);
+}
+
+.footer{
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  background-color: var(--color-first);
+  height: 50vh;
 }

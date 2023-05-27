@@ -23,7 +23,7 @@ function Skills() {
             <h2>Technical skills</h2>
         <div className="skills" >
             <div className="skillList">
-            <div className='skillbox'>
+                    <div className='col-md-11' id='skillbox'>
                         <div>Front End</div>
                         <div className="skillset">
                             <div className='skillimg'><img src={Html} alt="html icon" /><div>HTML</div></div>
@@ -32,7 +32,7 @@ function Skills() {
                             <div className='skillimg'><img src={reactjs} alt="reactjs icon" /><div>React js</div></div>
                         </div>
                     </div>
-                    <div className='skillbox'>
+                    <div className='col-md-11' id='skillbox'>
                         <div>Back End</div>
                         <div className="skillset">
                             <div className='skillimg'><img src={nodejs} alt="nodejs icon" className='node'/><div>Node js</div></div>
@@ -42,7 +42,7 @@ function Skills() {
                             
                         </div>
                     </div>
-                    <div className='skillbox'>
+                    <div className='col-md-11' id='skillbox'>
                         <div>Databases</div>
                         <div className="skillset">
                             <div className='skillimg'><img src={oracle} alt="selenium icon" className='data'/></div>
@@ -50,7 +50,7 @@ function Skills() {
                             <div className='skillimg'><img src={postgresql} alt="junit icon" className='data'/></div>
                         </div>
                     </div>
-                    <div className='skillbox'>
+                    <div className='col-md-11' id='skillbox'>
                         <div>Test Driven Development </div>
                         <div className="skillset">
                             <div className='skillimg'><img src={selenium} alt="selenium icon" /><div>selenium</div></div>
@@ -58,7 +58,7 @@ function Skills() {
                             
                         </div>
                     </div>
-                    <div className='skillbox' >
+                    <div className='col-md-11' id='skillbox'>
                         <div>Software Tools</div>
                         <div className="skillset">
                             <div className='skillimg'><img src={git} alt="git icon" /><div>git</div></div>
