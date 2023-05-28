@@ -1,5 +1,5 @@
 import Lottie from 'react-lottie';
-import animationData from '../lotties/my-desk';
+import animationData from '../lotties/desktop.json';
 
 function About(){
     const defaultOptions = {

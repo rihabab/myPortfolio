@@ -652,6 +652,40 @@ input{
 
 .footer{
   clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
-  background-color: var(--color-first);
+  background-color:rgb(84, 5, 123);
   height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+.card {
+  position: relative;
+  display: inline-block;
+}
+
+.card-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fff;
+  padding: 10px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card:hover .card-info {
+  opacity: 1;
+  visibility: visible;
+}
+.card img{
+  width:300px;
+  height:300px;
+}
+.card:hover  {
+  transform: scale(2);
 }

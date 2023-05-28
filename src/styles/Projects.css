@@ -40,6 +40,8 @@
   .projectItem:hover {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in;
+    transform:scaleX(1) scaleY(1.7);
+
     
   }
   

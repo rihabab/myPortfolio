@@ -42,7 +42,7 @@ function Navbar(){
         </li>
         <li>
             <div >
-                <Link to="experience" spy={true} smooth={true} offset={50} duration={500}>
+                <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
                     <div className="space"></div>
                     <Envelope size={28} />
                 </Link>
