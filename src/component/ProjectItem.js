@@ -4,12 +4,14 @@ import { GithubLogo , FigmaLogo } from "phosphor-react";
 
 function ProjectItem({ image, name, id,github , figma }) {
   /*const navigate = useNavigate();*/
+
+  const hover =()=>{
+    
+  }
   return (
     <div
       className="projectItem"
-      /*onClick={() => {
-        navigate("/project/" + id);
-      }}*/
+      onMouseEnter={hover}
     >
       <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
       <div className="projecttext"> 

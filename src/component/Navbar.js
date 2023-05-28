@@ -3,7 +3,9 @@ import { House } from "phosphor-react";
 import { User } from "phosphor-react";
 import { ListChecks } from "phosphor-react";
 import { Envelope } from "phosphor-react";
+import { Briefcase  } from "phosphor-react";
 import { Link  } from "react-scroll";
+
 
 
 
@@ -36,6 +38,15 @@ function Navbar(){
                 <Link to="skills" spy={true} smooth={true} offset={50} duration={500}>
                     <div className="space"></div>
                     <ListChecks size={28} />
+                </Link>
+                
+            </div>
+        </li>
+        <li>
+            <div >
+                <Link  to="experience" spy={true} smooth={true} offset={50} duration={500} >
+                    <div className="space"></div>
+                    <Briefcase size={28} />
                 </Link>
                 
             </div>

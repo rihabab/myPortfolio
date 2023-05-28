@@ -1,5 +1,5 @@
 import Proj1 from "../assets/images/restaurant1.PNG";
-import Proj2 from "../assets/images/music.jpg";
+import Proj2 from "../assets/images/music.webp";
 import Proj3 from "../assets/images/ineguide.PNG";
 import Proj4 from "../assets/images/nodejs.png";
 import Proj5 from "../assets/images/reactjs.png";
@@ -14,7 +14,7 @@ export const ProjectList = [
     figma:"",
   },
   {
-    name: "Music streaming app",
+    name: "Music lyrics app",
     image: Proj2,
     skills: "React,Node.js,MongoDB",
     github:"https://github.com/unk1ndled/MusicAppVersion2",

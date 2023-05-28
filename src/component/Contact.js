@@ -25,27 +25,26 @@ const Contact = () => {
       preserveAspectRatio: "xMidYMid slice"
     }
   };
-
+  /* <div className='separator'></div> */
   return (
     <div className='contact' id='contact'>
-      <h1> Contact Me </h1>
-    <div style={{paddingRight:'5em', display:'flex', justifyContent:'center'}}>
-      <div className='col-md-5' style={{width:'%50'}}>
+      
+      <h2 style={{height:'20px', fontSize:'30px', marginLeft:'20%', color:'rgb(114, 18, 232)'}}> Get in touch </h2>
+      <div className='contactcont' style={{paddingRight:'5em',paddingTop:'0', display:'flex', justifyContent:'center'}}>
+      <div >
       <Lottie 
                             options={defaultOptions}
                             height={500}
                             width={500}
                         />
       </div>
-      <div className='col-md-4'id='contactform' >
-        <form ref={form} onSubmit={sendEmail} style={{width:'95%'}}>
+      <div id='contactform' style={{padding:'110px 70px 0px 70px'}}>
+        <form ref={form} onSubmit={sendEmail} >
+        <input type="text" name="user_name" placeholder='Full Name' style={{width:'100%' , marginBottom:'0.7em'}} />
+        <input type="email" name="user_email" placeholder='Email' style={{width:'100%',marginBottom:'0.7em'}} />
+        <textarea placeholder='Message' name="message" style={{width:'100%',marginBottom:'0.7em'}} />
+        <button type="submit" value="Send" class="button-86" role="button">Contact me</button>
         
-        <input type="text" name="user_name" placeholder='Full Name' style={{width:'95%' , marginBottom:'0.7em'}} />
-        
-        <input type="email" name="user_email" placeholder='Email' style={{width:'95%',marginBottom:'0.7em'}} />
-        
-        <textarea placeholder='Message' name="message" style={{width:'95%',marginBottom:'0.7em'}} />
-        <input type="submit" value="Send"  style={{width:'95%', marginBottom:'0.7em'}}/>
         </form>
       </div>
       </div>
